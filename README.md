@@ -8,6 +8,8 @@ The agent can inspect code files, write patches, run tests, and verify results �
 
 ##  Repository Structure
 
+```
+
 ├── calculator/ # Contains the calculator module / logic
 ├── functions/ # Definitions of tool functions (get file content, write file, run code, etc.)
 ├── call_function.py # Dispatches function calls from the AI agent to the tool functions
@@ -17,6 +19,7 @@ The agent can inspect code files, write patches, run tests, and verify results �
 ├── pyproject.toml # Project metadata & dependencies
 ├── .gitignore
 
+```
 ---
 
 
@@ -38,12 +41,13 @@ Essentially automates debugging & patching workflows in a controlled way.
 ##  How to Set Up & Run
 
 1. **Clone the repo**  
-   
+   ```
    git clone https://github.com/aqeel-01/ai-debug-agent.git
    cd ai-debug-agent
-
+   ```
 2. **Set up virtual environment**
 
+ ```
  python -m venv .venv
  Activate it:
  Windows (PowerShell):
@@ -53,18 +57,23 @@ Essentially automates debugging & patching workflows in a controlled way.
  On Linux / Mac:
  source .venv/bin/activate
 
+ ```
 
 3. **Install dependencies**
+
+```
 If you use pyproject.toml, probably via poetry or pip:
 
 pip install -r requirements.txt
 or if using poetry:
 poetry install
 
+```
 
 4. **Configure API key**
 Make sure to set your Gemini / genai API key via environment variable, e.g.:
 
+```
 export GEMINI_API_KEY="your_api_key_here"
  or on Windows:
 set GEMINI_API_KEY="your_api_key_here"
@@ -83,7 +92,7 @@ uv run calculator/main.py "3 + 7 * 2"
 Run tests manually (if needed):
 
 python tests.py
-
+```
 ## Example
 
 Before fix:
@@ -116,3 +125,4 @@ Could integrate auto-PR or CI bots to accept fixes automatically.
 Expand to support more file types, languages, and refactoring scenarios.
 
 ---
+
