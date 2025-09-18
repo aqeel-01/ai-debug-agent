@@ -44,21 +44,21 @@ Essentially automates debugging & patching workflows in a controlled way.
 
 2. **Set up virtual environment**
 
-python -m venv .venv
-# Activate it:
-# Windows (PowerShell):
-.venv\Scripts\Activate.ps1
-# or Command Prompt:
-.venv\Scripts\activate.bat
-# On Linux / Mac:
-source .venv/bin/activate
+ python -m venv .venv
+ Activate it:
+ Windows (PowerShell):
+ .venv\Scripts\Activate.ps1
+ or Command Prompt:
+ .venv\Scripts\activate.bat
+ On Linux / Mac:
+ source .venv/bin/activate
 
 
 3. **Install dependencies**
 If you use pyproject.toml, probably via poetry or pip:
 
 pip install -r requirements.txt
-# or if using poetry:
+or if using poetry:
 poetry install
 
 
@@ -66,7 +66,7 @@ poetry install
 Make sure to set your Gemini / genai API key via environment variable, e.g.:
 
 export GEMINI_API_KEY="your_api_key_here"
-# or on Windows:
+ or on Windows:
 set GEMINI_API_KEY="your_api_key_here"
 
 
@@ -115,3 +115,4 @@ Could integrate auto-PR or CI bots to accept fixes automatically.
 
 Expand to support more file types, languages, and refactoring scenarios.
 
+---
