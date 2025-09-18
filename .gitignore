@@ -1,0 +1,26 @@
+
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Env vars
+.env
+
+# Python version file
+.python-version
+
+# Lock files
+uv.lock
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db
